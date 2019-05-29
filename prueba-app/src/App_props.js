@@ -12,8 +12,8 @@ function App() {
     let b = useRef(null);
     
     // define las funciones que actualizan los estados:
-    const [f, setF] = useState(32.00);   
-	const [c, setC] = useState(-17.78);   
+    const [f, setF] = useState((32.00.toFixed(2)));   
+	const [c, setC] = useState(-17.78);
 	const [u, setU] = useState((0).toFixed(2));   
 	const [e, setE] = useState((0).toFixed(2));   
 	const [s, setS] = useState(0);   
@@ -48,16 +48,16 @@ function App() {
 		<div className="App">
 			<br/><br/>
 			Devuelve los valores por la consola y los pinta en el documento: <br/><br/>
-			Introduce los grados Celsius <input type="text" ref={celsius} defaultValue="0"/>--><Funciones res={f} opt="1"/>ºF
+			Introduce los grados Celsius <input type="text" ref={celsius} defaultValue="0"/>--><Funciones res={f} opt="1"/>
             <button onClick={ctof}>Convertir a Fahrenheit</button><br/><br/>
 
-			Introduce los grados Fahrenheit<input type="text" ref={fahren} defaultValue="0"/>--><Funciones res={c} opt="2"/>ºC
+			Introduce los grados Fahrenheit<input type="text" ref={fahren} defaultValue="0"/>--><Funciones res={c} opt="2"/>
             <button onClick={ftoc}>Convertir a Celsius</button><br/><br/>
 
-			Introduce los EUR<input type="text" ref={eur} defaultValue="0"/>--><Funciones res={u} opt="3"/>USD
+			Introduce los EUR<input type="text" ref={eur} defaultValue="0"/>--><Funciones res={u} opt="3"/>
             <button onClick={eurtousd}>Convertir a USD</button><br/><br/>
 
-			Introduce los USD<input type="text" ref={usd} defaultValue="0"/>--><Funciones res={e} opt="4"/>EUR
+			Introduce los USD<input type="text" ref={usd} defaultValue="0"/>--><Funciones res={e} opt="4"/>
             <button onClick={usdtoeur}>Convertir a EUR</button><br/><br/>
 
 			Introduce los lados del rectángulo<input type="text" ref={a} defaultValue="0"/><input type="text" ref={b} defaultValue="0"/>--><Funciones res={s} opt="5"/>

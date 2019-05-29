@@ -11,7 +11,7 @@ const Funciones = _ => {
     let b = useRef(null);
     
     // define las funciones que actualizan los estados:
-    const [f, setF] = useState(32.00);   
+    const [f, setF] = useState((32.00.toFixed(2)));   
 	const [c, setC] = useState(-17.78);   
 	const [u, setU] = useState((0).toFixed(2));   
 	const [e, setE] = useState((0).toFixed(2));   
