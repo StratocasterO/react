@@ -11,31 +11,31 @@ const Funciones = _ => {
     let b = useRef(null);
     
     // define las funciones que actualizan los estados:
-    const [f, setF] = useState(0);   
-    const [c, setC] = useState(32);   
-    const [u, setU] = useState(0);   
-    const [e, setE] = useState(0);   
-    const [s, setS] = useState(0);   
+    const [f, setF] = useState(32.00);   
+	const [c, setC] = useState(-17.78);   
+	const [u, setU] = useState((0).toFixed(2));   
+	const [e, setE] = useState((0).toFixed(2));   
+	const [s, setS] = useState(0);  
     
     const ctof = () => {
-        console.log(celsius.current.value*9/5+32);
-        setF(celsius.current.value*9/5+32);
-    };
-    
-    const ftoc = () => {
-        console.log((fahren.current.value-32)*5/9);
-        setC((fahren.current.value-32)*5/9);
-    };
-    
-    const eurtousd = () => {
-        console.log(eur.current.value*1.12);
-        setU(eur.current.value*1.12);
-    };
-    
-    const usdtoeur = () => {
-        console.log((usd.current.value/1.12).toFixed(2));
-        setE((usd.current.value/1.12).toFixed(2));
-    };
+		console.log((celsius.current.value*9/5+32).toFixed(2));
+		setF((celsius.current.value*9/5+32).toFixed(2));
+	};
+	
+	const ftoc = () => {
+		console.log(((fahren.current.value-32)*5/9).toFixed(2));
+		setC(((fahren.current.value-32)*5/9).toFixed(2));
+	};
+	
+	const eurtousd = () => {
+		console.log((eur.current.value*1.12).toFixed(2));
+		setU((eur.current.value*1.12).toFixed(2));
+	};
+	
+	const usdtoeur = () => {
+		console.log((usd.current.value/1.12).toFixed(2));
+		setE((usd.current.value/1.12).toFixed(2));
+	};
     
     const rectangleArea = () => {
         console.log(a.current.value*b.current.value);

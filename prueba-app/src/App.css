@@ -49,3 +49,7 @@ span{
   padding: 1px 0;
   display: inline-block;
 }
+span.none{
+  padding: 0;
+  margin: 0;
+}
