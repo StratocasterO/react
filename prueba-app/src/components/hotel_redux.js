@@ -5,7 +5,7 @@ import { enviarCosteH } from '../store/coste_h/actions';
 const CosteHotelR = (props, {enviarCosteH}) => {
     let coste = props.noches * 40;
 
-    enviarCosteH(coste.current.value);
+    enviarCosteH(coste.current.value);  // no se lanza
 
     return (
         <p>
@@ -14,4 +14,4 @@ const CosteHotelR = (props, {enviarCosteH}) => {
     );
 };
 
-export default connect(null, {calcularCoste})(CosteHotelR); // el primer parámetro lee la store (null = no lo hace), el segundo modifica la store
+export default connect(null, {enviarCosteH})(CosteHotelR); // el primer parámetro lee la store (null = no lo hace), el segundo modifica la store
