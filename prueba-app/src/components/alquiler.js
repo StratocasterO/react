@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react'
+import React from 'react'
 
 const CosteAlquiler = (props) => {
     let coste = props.noches * 40;

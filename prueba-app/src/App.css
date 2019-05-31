@@ -13,15 +13,6 @@ button{
   background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 span{
   margin: 0 10px;
   height: 16px;

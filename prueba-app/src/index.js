@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App_redux';
+import App from './App_costes_redux';      // importa aquí la app que quieres cargar
 import * as serviceWorker from './serviceWorker';
 
 import {Provider} from 'react-redux';
 import store from './store';
 
 const Application = () => (
-    <Provider store={store}>
+    // provider envolviendo a la app para usar Redux
+    <Provider store={store}>        
         <App />
     </Provider>
 );
