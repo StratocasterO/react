@@ -4,7 +4,7 @@ const initalState = {coste_h: 40};
 //  action.payload será el valor que quiero añadir, borrar, etc
 
 export default (state = initalState, action) => {
-    if (action.type === 'CALCULAR') {
+    if (action.type === 'CALCULA') {
         return {
             ...state, // devuelve todo lo que había en el state
             coste_h: action.payload

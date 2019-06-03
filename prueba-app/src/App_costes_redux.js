@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
-import CosteAlquilerR from './components/alquiler';
-import CosteHotelR from './components/hotel';
+import CosteAlquilerR from './components/alquiler_redux';
+import CosteHotelR from './components/hotel_redux';
 import CosteGuardado from './components/coste_redux'
 
 function App() {

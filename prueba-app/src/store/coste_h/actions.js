@@ -2,7 +2,7 @@
 
 export const enviarCosteH = (coste_h) => {
     return {
-        type: 'CALCULAR',
+        type: 'CALCULA',
         payload: coste_h
     }
 };
