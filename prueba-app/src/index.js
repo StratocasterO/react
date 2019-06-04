@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App_costes_redux';                 // importa aquí la app que quieres cargar !!!
+import App from './app_routes';                 // importa aquí la app que quieres cargar !!!
 import * as serviceWorker from './serviceWorker';
 
 import {Provider} from 'react-redux';

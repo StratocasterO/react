@@ -9,6 +9,18 @@ input[type=text]{
   font-family: arial;
 }
 
+input.user{
+  width: 300px;
+  margin: 5px 0;
+  text-align: center;
+  font-family: arial;
+}
+
+.login{
+  border: 1px solid grey;
+  padding: 15px;
+}
+
 button{
   background-color: white;
 }

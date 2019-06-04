@@ -1,8 +1,8 @@
-const API_URL = 'https://pokeapi.co/api/v2';
+const API_URL = 'http://localhost:3001';
 
 const fetchData = (url, options = {}) => {
   const { headers = {}, ...reqOptions } = options;
-  console.log(headers)
+  
   return fetch(API_URL + url, {
     headers: {
       'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ export const getJson = (url, params, options) => {
 export const postJson = (url, params, options = {}) => {
   return fetchData(url, {
     method: 'POST',
-    body:JSON.stringify(params),
+    body: JSON.stringify(params),
     ...options,
   });
 };
