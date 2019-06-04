@@ -9,8 +9,12 @@ function App_login() {
     const user = useRef('');
 
     const fetchToken = _ => {
-        postJson('/login', {user:user.current.value, pass:pass.current.value})
+        let u = user.current.value
+        let p = pass.current.value
+
+        postJson('/login', {u, p})
         .then(res => {
+            console.log(res);
             modificarToken(res);
         });
     }
