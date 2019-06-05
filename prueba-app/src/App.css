@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-input[type=text]{
+input[type=text],input[type=password]{
   width: 30px;
   margin: 0 10px;
   text-align: center;
@@ -19,9 +19,12 @@ input.user{
 .login{
   border: 1px solid grey;
   padding: 15px;
+  width: 350px;
+  margin: 30px auto;
 }
 
 button{
+  margin-top: 25px;
   background-color: white;
 }
 
