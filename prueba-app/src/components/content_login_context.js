@@ -5,15 +5,14 @@ import '../App.css';
 
 const Content = () => {
     const [userData, setUserData] = useState(null);
-    const state = useContext(AppContext);
+    const [state,setState] = useContext(AppContext);
 
     useEffect(() => {
-        if(state.token != null){
-        getJson('/user-data', '', {headers: state.token})
-            .then(setUserData);
-        console.log(userData);
-        }
+        getJson('/user-data', '', {headers: {accesstoken: state.token}})
+            .then(setUserData)
     }, [state]);
+
+    console.log(userData);
 
     return (
         <div className="App">
