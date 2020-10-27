@@ -5,8 +5,8 @@ import App from './App_login';                 // importa aquí la app que quier
 import Content from './components/content_login_context'
 import * as serviceWorker from './serviceWorker';
 
-// import {Provider} from 'react-redux';    // provider de Redux
-// import store from './store';
+import {Provider} from 'react-redux';    // provider de Redux
+import store from './store';
 
 import MyProvider from './context/provider';    // provider de Context
 
