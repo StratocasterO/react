@@ -1,6 +1,6 @@
 // abstraccion de las peticiones GET y POST al servidor:
 
-const API_URL = 'http://localhost:3001';      // URL del servidor al que se accede
+const API_URL = 'http://localhost:3000';      // URL del servidor al que se accede
 
 const fetchData = (url, options = {}) => {
 	const { headers = {}, ...reqOptions } = options;
